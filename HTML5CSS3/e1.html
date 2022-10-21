@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example1</title>
+  <style type="text/css">
+    .class1 {
+      background-color:grey;
+      color:white;
+      padding:5px;
+      margin:2px;
+    }
+    .class2 {
+      font-size:x-large;
+    }
+  </style>
+</head>
+<body>
+  I like <code>apples</code> and <code>oranges</code>.
+  <hr />
+  Go to <a class="link" href="https://www.baidu.com">Baidu</a><p></p>
+  Enter your name: <input disabled="disabled" data-creator="wangmu" data-purpose="collection" />
+  <hr />
+
+  <form>
+    Name: <input type="text" name="name" accesskey="n">
+    <p />
+    Password: <input type="password" name="pwd" accesskey="p">
+    <p />
+    <input type="submit" name="Submit">
+  </form>
+  <a class="class1 class2" href="https://www.google.com">Google</a>
+  <a class="class1 otherClass" href="https://www.baidu.com">Baidu</a>
+  <p />
+  <label contenteditable contextmenu="go to html">I like apples and bananas.</label>
+
+  <script type="text/javascript">
+    let elems = document.getElementsByClassName("otherClass");
+    for (let i = 0; i < elems.length; i++) {
+      let x = elems[i];
+      x.style.border = "thin solid black";
+      x.style.backgroundColor = "white";
+      x.style.color = "black";
+    }
+  </script>
+</body>
+</html>
