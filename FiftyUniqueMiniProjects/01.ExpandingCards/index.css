@@ -23,7 +23,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   height: 80vh;
   border-radius: 50px;
   color: #fff;
@@ -43,11 +42,11 @@ body {
   opacity: 0;
 }
 
-.panel .active {
+.panel.active {
   flex: 5;
 }
 
-.panel .active h3 {
+.panel.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
