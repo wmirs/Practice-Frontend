@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>熊猫调查问卷</title>
+  <link rel="shortcut icon" href="pandaIcon.png">
+  <link rel="bookmark" href="pandaIcon.png">
+</head>
+<body>
+  <form action="" method="GET">
+    <label for="name">姓名: </label>
+    <input id="name" type="text" name="name" required placeholder="请输入你的姓名" />
+    <br />
+
+<!--    <label>性别: </label>-->
+<!--    <input id="male" type="radio" name="gender" value="male">-->
+<!--    <label for="male">男</label>-->
+<!--    <input id="female" type="radio" name="gender" value="female">-->
+<!--    <label for="female">女</label>-->
+<!--    <input id="other" type="radio" name="gender" value="other">-->
+<!--    <label for="other">保密</label>-->
+    <label for="gender">性别:</label>
+    <select id="gender" name="gender">
+      <option></option>
+      <option value="male">男性</option>
+      <option value="female">女性</option>
+      <option value="other">保密</option>
+    </select>
+    <br />
+
+    <label for="telephone">电话: </label>
+    <input id="telephone" type="text" name="telephone">
+    <br />
+
+    <label for="email">邮箱: </label>
+    <input id="email" type="email" name="email" required>
+    <br />
+
+    <label for="age">年龄: </label>
+    <input id="age" type="number" name="age" value="18" min="0" max="200" step="1">
+    <br />
+
+    <label for="area">地区: </label>
+    <input id="area" type="text" name="area" list="area_list">
+    <datalist id="area_list">
+      <option value="北京市">北京市</option>
+      <option value="天津市">天津市</option>
+      <option value="成都市">四川省成都市</option>
+      <option value="南京市">江苏省南京市</option>
+    </datalist>
+    <br />
+    <label for="suggestion">建议: </label>
+    <textarea id="suggestion" name="suggestion" cols="16" rows="3"></textarea>
+    <br />
+    <input id="subPandaNews" type="checkbox" checked name="subPandaNews" value="subPandaNews">
+    <label for="subPandaNews">订阅熊猫电子报</label>
+    <br />
+
+    <button type="submit">提交调查问卷</button>
+  </form>
+</body>
+</html>

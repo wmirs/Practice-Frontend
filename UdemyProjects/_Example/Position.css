@@ -1,0 +1,53 @@
+div.relativeParent {
+  background-color: lightgrey;
+  width: 200px;
+  height: 500px;
+}
+
+div.relativeChildren {
+  width: 100px;
+  height: 100px;
+}
+
+div.relativeChild1 {
+  background-color: lightblue;
+}
+
+div.relativeChild2 {
+  background-color: lightgreen;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+div.relativeChild3 {
+  background-color: lightpink;
+  position: relative;
+  z-index: 2;
+}
+
+div.absoluteParent {
+  background-color: lightgrey;
+  width: 200px;
+  height: 500px;
+  position: relative;
+}
+
+div.absoluteChildren {
+  width: 100px;
+  height: 100px;
+}
+
+div.absoluteChild1 {
+  background-color: lightblue;
+}
+div.absoluteChild2 {
+  background-color: lightgreen;
+  position: absolute;
+  top: 50px;
+  right: -50px;
+}
+div.absoluteChild3 {
+  background-color: lightpink;
+}
