@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow"/>
+  <style rel="stylesheet">
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body main {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      padding: 10px;
+      border: 2px double black;
+      background-color: lightgray;
+    }
+    #banana {
+      font-size: larger;
+      border: 1px solid red;
+      transition: border, font-size 3s linear;
+    }
+    #banana:hover {
+      font-size: xxx-large;
+      border: 1px solid blue;
+      background-color: green;
+      color: white;
+      padding: 5px;
+      transition: border, color, background-color, padding, font-size 3s linear;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>There are lots of different kinds of fruit - there are over 500
+      varieties of <span id="banana">banana</span> alone. By the time we add the
+      countless types of apples, oranges, and other
+      well-known fruit, we are faced with thousands of choices. </p>
+  </main>
+</body>
+</html>

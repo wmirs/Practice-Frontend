@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Animation Try</title>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    p {
+      font-size: 1.5rem;
+      background-color: lightgrey;
+      border: 2px double black;
+      margin: 0 50px;
+    }
+    #banana {
+      display: inline-block;
+      background-color: lightgreen;
+      color: green;
+      font-size: 2rem;
+      border: 5px solid green;
+    }
+    #banana:hover {
+      animation-name: bananaHover;
+      animation-delay: 100ms;
+      animation-duration: 1.5s;
+      animation-direction: alternate;
+      animation-iteration-count: 2;
+      animation-timing-function: linear;
+    }
+    @keyframes bananaHover {
+      from{
+        background-color: green;
+        color: white;
+      }
+      to {
+        background-color: lightblue;
+        color: blue;
+        font-size: 5rem;
+        border: 10px solid blue;
+        transition: all 1s ease;
+      }
+    }
+  </style>
+</head>
+<body>
+<p>
+  There are lots of different kinds of fruit - there are over 500
+  varieties of <span id="banana">banana</span> alone. By the time we add the
+  countless types of apples, oranges, and other
+  well-known fruit, we are faced with thousands of choices.
+</p>
+</body>
+</html>

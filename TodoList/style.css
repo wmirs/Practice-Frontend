@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, lightblue, lightgreen);
+}
+
+header {
+  /** header中元素居中展示 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+header h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.todo-adds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-adds input, .todo-adds button {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+.todo-adds input[type="number"] {
+  width: 5rem;
+  text-align: center;
+}
+.todo-adds button {
+  cursor: pointer;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.todo-sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.todo-sort button {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .todo-item {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  margin: 0.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  animation-name: ScaleUp;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+section .todo-item p {
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  height: 2.5rem;
+}
+.todo-item-complete p {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(211, 211, 211);
+  text-decoration: line-through;
+  transition: all 0.3s linear;
+}
+section .todo-item p.todo-item-text {
+  width: 30rem;
+}
+section .todo-item p.todo-item-time {
+  width: 6rem;
+  text-align: center;
+}
+section .todo-item button {
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-weight: bolder;
+}
+section .todo-item button.todo-item-complete-btn {
+  background-color: green;
+}
+section .todo-item button.todo-item-delete-btn {
+  background-color: red;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+button {
+  cursor: pointer;
+}
+/** 关闭按钮中i标签的点击事件 */
+i {
+  pointer-events: none;
+}
+
+/** 增加添加待办的动画 */
+@keyframes ScaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes ScaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+

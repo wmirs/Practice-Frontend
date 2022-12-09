@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.progress-container {
+  border: 1px solid red;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.process {
+  height: 20px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+
+}
+/*.progress-container .circle:nth-child(2) {*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  top: 5px;*/
+/*}*/
+/*.progress-container .circle:nth-child(3) {*/
+/*  position: absolute;*/
+/*  left: 130px;*/
+/*  top: 5px;*/
+/*}*/
+/*.progress-container .circle:nth-child(4) {*/
+/*  position: absolute;*/
+/*  left: 260px;*/
+/*  top: 5px;*/
+/*}*/
+/*.progress-container .circle:nth-child(5) {*/
+/*  position: absolute;*/
+/*  left: 390px;*/
+/*  top: 5px;*/
+/*}*/
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+}

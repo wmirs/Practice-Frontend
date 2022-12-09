@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TransitionTry</title>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    p {
+      font-size: 1.5rem;
+      background-color: lightgrey;
+      border: 2px double black;
+      padding: 50px;
+      width: 50%;
+    }
+    #banana {
+      display: inline-block;
+    }
+    .banana-before {
+      display: inline-block;
+      background-color: lightgreen;
+      color: green;
+      font-size: 2rem;
+      border: 5px solid green;
+      transition: all 1s linear;
+    }
+    .banana-after {
+      background-color: lightblue;
+      color: blue;
+      font-size: 5rem;
+      border: 10px solid blue;
+      transition: all 1s ease;
+    }
+  </style>
+</head>
+<body>
+<p>
+  There are lots of different kinds of fruit - there are over 500
+  varieties of <span id="banana" class="banana-before">banana</span> alone. By the time we add the
+  countless types of apples, oranges, and other
+  well-known fruit, we are faced with thousands of choices.
+</p>
+<button>Change #banana Style</button>
+
+<script>
+  let btn = document.querySelector("button")
+  btn.addEventListener("click", (e) => {
+    let banana = document.querySelector("#banana")
+    banana.classList.toggle("banana-after")
+  })
+</script>
+</body>
+</html>

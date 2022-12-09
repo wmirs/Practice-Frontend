@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Todo List</title>
+  <meta name="description" content="TODO List"/>
+  <meta name="robots" content="index, follow"/>
+  <!-- cdnjs fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>王牧的待办项</h1>
+  </header>
+  <main>
+    <form class="todo-adds">
+      <input type="text" placeholder="简单描述待办内容" required />
+      <input type="number" placeholder="月" min="1" max="12" required />
+      <input type="number" placeholder="日" min="1" max="31" required />
+      <button>添加为待办项</button>
+    </form>
+    <div class="todo-sort">
+      <button id="todo-sort-asc">时间正序</button>
+      <button id="todo-sort-desc">时间倒序</button>
+    </div>
+    <section>
+<!--      <div class="todo-item">-->
+<!--        <p class="todo-item-text">Learn Java</p>-->
+<!--        <p class="todo-item-time">12-24</p>-->
+<!--        <button class="todo-item-complete-btn"><i class="fa-solid fa-check"></i></button>-->
+<!--        <button class="todo-item-delete-btn"><i class="fa-solid fa-trash"></i></button>-->
+<!--      </div>-->
+<!--      <div class="todo-item todo-item-complete">-->
+<!--        <p class="todo-item-text">Learn HTML&CSS</p>-->
+<!--        <p class="todo-item-time">12-26</p>-->
+<!--        <button class="todo-item-complete-btn"><i class="fa-solid fa-check"></i></button>-->
+<!--        <button class="todo-item-delete-btn"><i class="fa-solid fa-trash"></i></button>-->
+<!--      </div>-->
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Try2</title>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow"/>
+  <script src="https://kit.fontawesome.com/3605500868.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+    .container {
+      height: 800px;
+      width: 400px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .bg, .bg-grey {
+      width: 200px;
+      height: 400px;
+      background-color: black;
+      z-index: 2;
+    }
+    .bg-grey {
+      background-color: lightgrey;
+      z-index: 1;
+    }
+    .bg-grey.active {
+      transform: rotate(-80deg);
+      transform-origin: left top;
+    }
+    .circle-box {
+      background-color: red;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      position: relative;
+      left: -50px;
+      top: -50px;
+    }
+    .circle-box button {
+      color: #FFFFFF;
+      background-color: transparent;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 0;
+      font-size: 15px;
+      height: 50px;
+    }
+    .circle-box button#open {
+      left: 60%;
+    }
+
+    .circle-box button#close {
+      top: 60%;
+      transform: rotate(90deg);
+      transform-origin: top left;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg-grey active">
+      <div class="circle-box">
+        <button id="close"><i class="fa fa-xmark"></i></i></button>
+        <button id="open"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
+  </div>
+  <script>
+    let openBtn = document.querySelector("#open")
+    let closeBtn = document.querySelector("#close")
+    openBtn.addEventListener("click", (e) => {
+      openBtn.classList.
+    })
+  </script>
+</body>
+</html>

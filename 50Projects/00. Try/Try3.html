@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>box-sizing</title>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow"/>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+    }
+    .parent-container {
+      width: 300px;
+      background-color: lightgrey;
+      border: 10px solid black;
+      height: 200px;
+      margin: 10px;
+      text-align: center;
+    }
+    .parent-container p {
+      line-height: 50px;
+    }
+    .child-container {
+      width: 100%;
+      padding: 10px;
+      border: 10px solid red;
+      background-color: lightblue;
+    }
+    .content-child-container {
+      box-sizing: content-box;
+    }
+    .border-child-container {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent-container">
+    <p>Parent container</p>
+    <div class="child-container content-child-container">
+      <p>Child container</p>
+    </div>
+  </div>
+
+  <div class="parent-container">
+    <p>Parent container</p>
+    <div class="child-container border-child-container">
+      <p>Child container</p>
+    </div>
+  </div>
+</body>
+</html>
